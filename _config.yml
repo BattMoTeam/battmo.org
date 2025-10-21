@@ -1,0 +1,34 @@
+title: BattMo
+description: Open-source battery modeling ecosystem
+url: "https://battmoteam.github.io"
+theme: jekyll-odin
+
+# Odin theme settings
+# Docs: https://github.com/tylergaw/jekyll-odin
+author: BattMoTeam
+email: contact@battmo.org
+
+# Optional social links (shown in footer)
+social_links:
+  github: https://github.com/BattMoTeam
+  linkedin: https://linkedin.com/company/battmo
+
+# Navigation (custom)
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: page
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
