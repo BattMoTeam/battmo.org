@@ -14,37 +14,43 @@ const Footer = () => (
           <p className="text-sm text-footer-foreground/70">
             ... about accelerating battery innovation through digital tools.
           </p>
+
+          {/* Social Badges */}
+          <div className="flex flex-wrap gap-2 mt-6 items-center">
+            <Button variant="ghost" size="sm" asChild>
+              <a href="https://github.com/BattMoTeam" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                <SiGithub size={20} /> GitHub
+              </a>
+            </Button>
+            <Button variant="ghost" size="sm" asChild>
+              <a href="https://www.youtube.com/@battmo5613" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                <SiYoutube size={20} /> YouTube
+              </a>
+            </Button>
+            <Button variant="ghost" size="sm" asChild>
+              <a href="https://www.linkedin.com/company/battmo/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                <SiLinkedin size={20} /> Linkedin
+              </a>
+            </Button>
+          </div>
         </div>
 
         {/* Funding */}
-        <div className="flex flex-col gap-4">
-          <div>
+        <div className="flex flex-col gap-4 items-center">
+          <div className="">
             <h3 className="text-2xl font-semibold mb-2">Funding</h3>
             <p className="text-sm text-footer-foreground/80">
               This project has received funding from the European Union.
             </p>
+            <img
+            src="https://raw.githubusercontent.com/BattMoTeam/visual-identity/1bc87b07605d77fb3faa788c82f06ec2735ed31f/img/flag_of_europe.png"
+            alt="EU Funding Logo"
+            className="h-16 object-contain mt-2"
+          />
           </div>
         </div>
 
-      </div>
 
-      {/* Social Badges */}
-      <div className="flex flex-wrap gap-2 mt-6 items-center">
-        <Button variant="ghost" size="sm" asChild>
-          <a href="https://github.com/BattMoTeam" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-            <SiGithub size={20} /> GitHub
-          </a>
-        </Button>
-        <Button variant="ghost" size="sm" asChild>
-          <a href="https://www.youtube.com/@battmo5613" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-            <SiYoutube size={20} /> YouTube
-          </a>
-        </Button>
-        <Button variant="ghost" size="sm" asChild>
-          <a href="https://www.linkedin.com/company/battmo/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-            <SiLinkedin size={20} /> Linkedin
-          </a>
-        </Button>
       </div>
 
       {/* Optional bottom divider */}
