@@ -9,7 +9,7 @@ const nextConfig: NextConfig = {
   },
   output: "export",
   basePath: isProd ? "/battmo.org" : "",
-  assetPrefix: isProd ? "/battmo.org": "",
+  assetPrefix: isProd ? "/battmo.org/public": "",
 };
 
 export default nextConfig;
