@@ -19,7 +19,7 @@ import {
 // Navigation links array to be used in both desktop and mobile menus
 const navigationLinks = [
   // { href: "/community", label: "Community", icon: HouseIcon, active: false },
-  { href: "https://batterymodel.com/our-team/", label: "BattMo Team", icon: InboxIcon }
+  { href: "https://batterymodel.com/our-team/", label: "BattMo Team", icon: InboxIcon, active: false }
 ]
 
 export default function NavigationBar() {

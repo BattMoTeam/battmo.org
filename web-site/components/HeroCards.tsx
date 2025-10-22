@@ -62,7 +62,7 @@ export default function HeroCards() {
         {/* Figure */}
         <div className="lg:w-1/2 flex justify-center lg:justify-end">
           <img
-            src="/I_wish_i_had_a_digital_twin.png"
+            src="/I_wish_i_had_a_virtual_cell.png"
             alt="BattMo Overview"
             className="w-80 md:w-[520px] rounded-lg shadow-lg"
           />
