@@ -9,7 +9,7 @@ const cards = [
   {
     title: "BattMo (MATLAB)",
     description: "Original MATLAB interface",
-    imgSrc: "/tesla_roll.mp4",
+    imgSrc: `${process.env.NODE_ENV === "production" ? "/battmo.org" : ""}/tesla_roll.mp4`,
     href: "https://github.com/BattMoTeam/BattMo",
     githubLink: "https://github.com/BattMoTeam/BattMo",
     docLink: "https://battmoteam.github.io/BattMo/",
@@ -17,7 +17,7 @@ const cards = [
   {
     title: "BattMo.jl",
     description: "High-performance Julia interface",
-    imgSrc: "/battmo_jl_small.mp4",
+    imgSrc: `${process.env.NODE_ENV === "production" ? "/battmo.org" : ""}/battmo_jl_small.mp4`,
     href: "https://github.com/BattMoTeam/BattMo.jl",
     githubLink: "https://github.com/BattMoTeam/BattMo.jl",
     docLink: "https://battmoteam.github.io/BattMo.jl/dev/",
@@ -34,7 +34,7 @@ const cards = [
   {
     title: "BattMoApp",
     description: "Interactive web app",
-    imgSrc: "/battmo_app_broad.mp4",
+    imgSrc: `${process.env.NODE_ENV === "production" ? "/battmo.org" : ""}/battmo_app_broad.mp4`,
     href: "https://app.batterymodel.com/",
     githubLink: "https://github.com/BattMoTeam/BattMoApp",
     docLink: "https://battmoteam.github.io/BattMo/app.html",
