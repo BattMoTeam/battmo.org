@@ -7,7 +7,7 @@ const nextConfig: NextConfig = {
   },
   output: "export",
   basePath: "/battmo.org",
-  assetPrefix: "/battmo.org",
+  assetPrefix: "/battmo.org/public",
 };
 
 export default nextConfig;
