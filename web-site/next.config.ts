@@ -6,6 +6,8 @@ const nextConfig: NextConfig = {
     domains: ['raw.githubusercontent.com'],
   },
   output: "export",
+  basePath: "/battmo.org",
+  assetPrefix: "/battmo.org/",
 };
 
 export default nextConfig;
