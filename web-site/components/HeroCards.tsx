@@ -43,7 +43,7 @@ const cards = [
 
 export default function HeroCards() {
   return (
-    <section className="relative w-screen py-16 px-6 flex flex-col items-center gap-32">
+    <section className="relative w-full flex flex-col items-center pt-20 gap-32">
 
       {/* --- Row 1: Description + Figure --- */}
       <div className="w-full flex flex-col lg:flex-row items-center lg:items-start gap-8 max-w-7xl mx-auto">
@@ -53,7 +53,9 @@ export default function HeroCards() {
             What is BattMo?
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground">
-            BattMo is a versatile toolbox for modeling, simulating, and optimizing electrochemical devices. 
+            BattMo is a versatile, and open-sourced, toolbox for modeling, and optimizing electrochemical devices.
+            The initial development features a pseudo X-dimensional (PXD) framework for the Doyle-Fuller-Newman model of lithium-ion battery cells. 
+            However, the development plan for BattMo includes extensions to other battery chemistries (e.g. metal-air) and eventually hydrogen systems (i.e. electrolyzers and fuel cells). 
             It provides interfaces for MATLAB, Python, and Julia, and includes an interactive web app to explore 
             battery behavior, continuum modeling, and design optimization.
           </p>
@@ -70,7 +72,7 @@ export default function HeroCards() {
       </div>
 
       {/* --- Row 2: BattMo Family Cards --- */}
-      <div className="w-full flex flex-col items-center bg-foreground/20 pt-20 pb-20">
+      <div className="w-full flex flex-col items-center bg-foreground/5 pt-20 pb-20">
         <h1 className="text-5xl font-bold text-primary mb-12 text-center">
           BattMo Family
         </h1>

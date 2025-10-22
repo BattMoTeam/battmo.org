@@ -5,7 +5,7 @@ import { BookOpen } from "lucide-react";
 
 const Footer = () => (
   <footer className="bg-footer-primary text-footer-foreground py-6">
-    <div className="max-w-[1400px] mx-auto px-8">
+    <div className="max-w-[1400px] mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
 
         {/* Branding */}

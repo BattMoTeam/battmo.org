@@ -47,7 +47,7 @@ const Hero = () => {
 
   return (
     <>
-      <section className="relative w-full h-[calc(100vh-6rem)] bg-background overflow-hidden flex flex-col items-center justify-center text-center px-6">
+      <section className="relative w-full h-[calc(100vh-6rem)] bg-background overflow-hidden flex flex-col items-center justify-center text-center">
         {/* --- Collage Layer --- */}
         <div className="absolute inset-0 pointer-events-none z-0">
           {collageWords.map((word, index) => (
