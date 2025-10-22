@@ -40,11 +40,11 @@ export default function CardButton({
       <div className="flex justify-center py-4">
         {isVideo ? (
           <video className="h-30 w-auto rounded-md" autoPlay loop muted playsInline>
-            <source src={imgSrc} type="video/mp4" />
+            <source src={`${process.env.NODE_ENV === "production" ? "/battmo.org" : ""}${imgSrc}`} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         ) : (
-          <img src={imgSrc} alt={title} className="h-30 w-auto object-contain rounded-md" />
+          <img src={`${process.env.NODE_ENV === "production" ? "/battmo.org" : ""}${imgSrc}`} alt={title} className="h-30 w-auto object-contain rounded-md" />
         )}
       </div>
 
