@@ -41,7 +41,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out # <-- output folder from Next.js static export
+          path: ./web-site/out # <-- output folder from Next.js static export
 
       - name: Deploy to GitHub Pages
         id: deployment
