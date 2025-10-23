@@ -1,2 +1,2 @@
-# battmo.org
-A repository for the battmo.org website
+# battmoteam.github.io
+A repository for the battmoteam.github.io website.
