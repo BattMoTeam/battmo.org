@@ -87,7 +87,7 @@ const Hero = () => {
           {/* --- Learn More Button --- */}
           <button
             onClick={scrollToCards}
-            className="mt-8 flex flex-col items-center gap-2 text-sm md:text-base font-medium text-primary hover:text-accent transition-colors"
+            className="mt-8 flex flex-col items-center gap-2 text-sm md:text-base font-medium text-primary transition-colors hover:text-foreground"
           >
             Learn More
             <ChevronDown className="w-6 h-6 animate-bounce" />

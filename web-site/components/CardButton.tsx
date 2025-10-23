@@ -44,7 +44,7 @@ export default function CardButton({
             Your browser does not support the video tag.
           </video>
         ) : (
-          <img src={imgSrc} alt={title} className="h-30 w-auto object-contain rounded-md" />
+          <img src={imgSrc} alt={title} className="h-20 w-auto object-contain rounded-md" />
         )}
       </div>
 

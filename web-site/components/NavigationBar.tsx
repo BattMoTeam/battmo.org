@@ -1,7 +1,7 @@
 import { useId } from "react"
 import { HouseIcon, InboxIcon, SearchIcon, ZapIcon } from "lucide-react"
 import Logo, { LogoLink } from "@/components/logo"
-import { Button } from "@/components/Button"
+import { Button } from "@/components/button"
 import { Input } from "@/components/input"
 import {
   NavigationMenu,
@@ -15,11 +15,14 @@ import {
   PopoverTrigger,
 } from "@/components/popover"
 
+import { SiGithub, SiYoutube, SiLinkedin } from "react-icons/si";
+
 
 // Navigation links array to be used in both desktop and mobile menus
 const navigationLinks = [
-  // { href: "/community", label: "Community", icon: HouseIcon, active: false },
-  { href: "https://batterymodel.com/our-team/", label: "BattMo Team", icon: InboxIcon, active: false }
+  { href: "https://github.com/BattMoTeam", label: "", icon: SiGithub, active: false },
+  { href: "https://www.youtube.com/@battmo5613", label: "", icon: SiYoutube, active: false },
+  { href: "https://www.linkedin.com/company/battmo/", label: "", icon: SiLinkedin, active: false }
 ]
 
 export default function NavigationBar() {
@@ -108,7 +111,8 @@ export default function NavigationBar() {
                     href={link.href}
                     className="text-foreground hover:text-primary active:text-primary flex-row items-center gap-2 py-1.5 font-medium"
                   >
-                    <span>{link.label}</span>
+                    <Icon size={30} className="text-muted-foreground" aria-hidden="true" />
+                    {/* <span>{link.label}</span> */}
                   </NavigationMenuLink>
                 </NavigationMenuItem>
               )

@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import CardButton from "./CardButton";
+import VideoCarousel from "./VideoCarousel";
 
 const imageURL =
   "https://raw.githubusercontent.com/BattMoTeam/visual-identity/1bc87b07605d77fb3faa788c82f06ec2735ed31f/logos/battmo_logo_thumb.png";
@@ -9,7 +10,7 @@ const cards = [
   {
     title: "BattMo (MATLAB)",
     description: "Original MATLAB interface",
-    imgSrc: `${process.env.NODE_ENV === "production" ? "/battmo.org" : ""}/tesla_roll.mp4`,
+    imgSrc: imageURL,
     href: "https://github.com/BattMoTeam/BattMo",
     githubLink: "https://github.com/BattMoTeam/BattMo",
     docLink: "https://battmoteam.github.io/BattMo/",
@@ -17,7 +18,7 @@ const cards = [
   {
     title: "BattMo.jl",
     description: "High-performance Julia interface",
-    imgSrc: `${process.env.NODE_ENV === "production" ? "/battmo.org" : ""}/battmo_jl_small.mp4`,
+    imgSrc: imageURL,
     href: "https://github.com/BattMoTeam/BattMo.jl",
     githubLink: "https://github.com/BattMoTeam/BattMo.jl",
     docLink: "https://battmoteam.github.io/BattMo.jl/dev/",
@@ -34,7 +35,7 @@ const cards = [
   {
     title: "BattMoApp",
     description: "Interactive web app",
-    imgSrc: `${process.env.NODE_ENV === "production" ? "/battmo.org" : ""}/battmo_app_broad.mp4`,
+    imgSrc: imageURL,
     href: "https://app.batterymodel.com/",
     githubLink: "https://github.com/BattMoTeam/BattMoApp",
     docLink: "https://battmoteam.github.io/BattMo/app.html",
@@ -71,9 +72,15 @@ export default function HeroCards() {
         </div>
       </div>
 
-      {/* --- Row 2: BattMo Family Cards --- */}
-      <div className="w-full flex flex-col items-center bg-foreground/5 pt-20 pb-20">
-        <h1 className="text-5xl font-bold text-primary mb-12 text-center">
+      {/* --- Row 2: Video Carousel --- */}
+      <div className="w-full flex flex-col items-center">
+      <VideoCarousel />
+      </div>
+        
+
+      {/* --- Row 3: BattMo Family Cards --- */}
+      <div className="w-full flex flex-col items-center pb-30">
+        <h1 className="text-4xl font-bold text-primary mb-12 text-center">
           BattMo Family
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-full max-w-7xl">
