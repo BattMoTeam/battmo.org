@@ -20,17 +20,17 @@ const videos: VideoItem[] = [
   {
     title: "Thermal Effects",
     description: "3D fully coupled thermal model in MATLAB.",
-    src: `${process.env.NODE_ENV === "production" ? "/battmo.org" : ""}/tesla_roll.mp4`,
+    src: `${process.env.NODE_ENV === "production" ? "" : ""}/tesla_roll.mp4`,
   },
   {
     title: "High performance",
     description: "Utilize the high performance interface in Julia for fast simulations.",
-    src: `${process.env.NODE_ENV === "production" ? "/battmo.org" : ""}/battmo_jl_small.mp4`,
+    src: `${process.env.NODE_ENV === "production" ? "" : ""}/battmo_jl_small.mp4`,
   },
   {
     title: "Interactive Web Interface",
     description: "See how BattMoApp lets you tweak parameters live.",
-    src: `${process.env.NODE_ENV === "production" ? "/battmo.org" : ""}/battmo_app_video.mp4`,
+    src: `${process.env.NODE_ENV === "production" ? "" : ""}/battmo_app_video.mp4`,
   },
 ];
 

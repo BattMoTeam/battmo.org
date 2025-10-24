@@ -8,8 +8,8 @@ const nextConfig: NextConfig = {
     domains: ['raw.githubusercontent.com'],
   },
   output: "export",
-  basePath: isProd ? "/battmo.org" : "",
-  assetPrefix: isProd ? "/battmo.org": "",
+  basePath: isProd ? "" : "",
+  assetPrefix: isProd ? "": "",
 };
 
 export default nextConfig;

@@ -11,7 +11,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <title>My Website</title>
 
         {/* Favicon */}
-        <link rel="icon" href={`${process.env.NODE_ENV === "production" ? "/battmo.org" : ""}/battmo_logo_thumb.png`} />
+        <link rel="icon" href={`${process.env.NODE_ENV === "production" ? "" : ""}/battmo_logo_thumb.png`} />
         {/* Optional: multiple sizes */}
         {/* <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         {/* <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" /> */}
