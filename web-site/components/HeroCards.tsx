@@ -10,7 +10,7 @@ const cards = [
   {
     title: "BattMo (MATLAB)",
     short_description: "Comprehensive MATLAB interface",
-    description: "BattMo for MATLAB is the original and most feature-rich implementation. It includes a wide range of features and models. It also contains prototyping tools like a computational graph for easier model development.",
+    description: "BattMo for MATLAB is the original and most feature-rich implementation. It includes a wide range of features and models. It also contains prototyping tools like a computational graph for a structured model development process.",
     imgSrc: imageURL,
     href: "https://github.com/BattMoTeam/BattMo",
     githubLink: "https://github.com/BattMoTeam/BattMo",
