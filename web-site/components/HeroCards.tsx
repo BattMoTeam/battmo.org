@@ -9,7 +9,8 @@ const imageURL =
 const cards = [
   {
     title: "BattMo (MATLAB)",
-    description: "Original MATLAB interface",
+    short_description: "Comprehensive MATLAB interface",
+    description: "BattMo for MATLAB is the original and most feature-rich implementation. It includes a wide range of features and models. It also contains prototyping tools like a computational graph for easier model development.",
     imgSrc: imageURL,
     href: "https://github.com/BattMoTeam/BattMo",
     githubLink: "https://github.com/BattMoTeam/BattMo",
@@ -17,7 +18,8 @@ const cards = [
   },
   {
     title: "BattMo.jl",
-    description: "High-performance Julia interface",
+    short_description: "High-performance Julia interface",
+    description: "BattMo.jl is a modern, high-performance implementation designed for speed and usability. While it’s still evolving to match the MATLAB version’s feature set, it offers a streamlined API for simulation and calibration, along with robust tools for debugging and parameter setup.",
     imgSrc: imageURL,
     href: "https://github.com/BattMoTeam/BattMo.jl",
     githubLink: "https://github.com/BattMoTeam/BattMo.jl",
@@ -25,16 +27,17 @@ const cards = [
   },
   {
     title: "PyBattMo",
-    description: "Python wrapper around BattMo.jl",
+    short_description: "Python interface for BattMo.jl",
+    description: "PyBattMo is a Python wrapper for BattMo.jl, enabling seamless integration of Julia’s performance with Python’s ecosystem. It allows users to run BattMo simulations within Python while leveraging familiar libraries and tools.",
     imgSrc: imageURL,
     href: "https://github.com/BattMoTeam/PyBattMo",
     githubLink: "https://github.com/BattMoTeam/PyBattMo",
-    docLink:
-      "https://battmoteam.github.io/BattMo.jl/dev/manuals/pybattmo/installation",
+    docLink: "https://battmoteam.github.io/BattMo.jl/dev/manuals/pybattmo/installation",
   },
   {
     title: "BattMoApp",
-    description: "Interactive web app",
+    short_description: "User-friendly web interface",
+    description: "BattMoApp is an interactive web application designed for users who prefer graphical interfaces over coding. It offers an accessible way to perform battery simulations, making BattMo’s capabilities available to a broader audience.",
     imgSrc: imageURL,
     href: "https://app.batterymodel.com/",
     githubLink: "https://github.com/BattMoTeam/BattMoApp",
@@ -88,6 +91,7 @@ export default function HeroCards() {
             <CardButton
               key={card.title}
               title={card.title}
+              short_description={card.short_description}
               description={card.description}
               imgSrc={card.imgSrc}
               href={card.href}

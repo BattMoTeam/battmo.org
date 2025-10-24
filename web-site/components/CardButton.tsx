@@ -4,7 +4,8 @@ import { useRouter } from "next/navigation";
 
 interface CardButtonProps {
   title: string;
-  description: string;
+  short_description: string;
+  description?: string;
   imgSrc: string; // image or video
   href: string; // main card link
   githubLink?: string;
@@ -15,6 +16,7 @@ interface CardButtonProps {
 
 export default function CardButton({
   title,
+  short_description,
   description,
   imgSrc,
   href,
@@ -51,9 +53,9 @@ export default function CardButton({
       {/* Text + Buttons */}
       <div className="p-4 text-center">
         <h2 className="font-semibold text-lg mb-1">{title}</h2>
-        <p className="text-sm text-muted-foreground mb-4">{description}</p>
+        <p className="text-sm text-muted-foreground mb-4">{short_description}</p>
 
-        <div className="flex justify-center gap-4 flex-wrap">
+        <div className="flex justify-center gap-4 flex-wrap mb-12">
           {githubLink && (
             <a
               href={githubLink}
@@ -89,6 +91,8 @@ export default function CardButton({
             </a>
           ) : null}
         </div>
+        <hr className="mb-4"></hr>
+        {description ? (<p className="text-sm text-muted-foreground mb-4">{description}</p>) : null}
       </div>
     </div>
   );
